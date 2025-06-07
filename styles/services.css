@@ -1,0 +1,425 @@
+/* ===========================
+   Base & Reset
+   =========================== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background-color: #f7f7f7;  
+}
+
+.book-now {
+    background: #27ae60 !important;
+    color: #fff !important;
+    padding: 10px 22px !important;
+    border-radius: 25px !important;
+    font-weight: bold !important;
+    box-shadow: 0 2px 8px rgba(46,204,113,0.1) !important;
+    transition: background 0.2s !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    width: auto !important; 
+}
+.book-now:hover {
+    background: #18462b !important;
+}
+
+.services-welcome {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(rgba(44,204,113,0.25), rgba(44,204,113,0.25)),
+        url('../images/services-img.jpg') bottom/cover no-repeat;
+    text-align: left;
+    position: relative;
+    padding: 48px 0 50px 60px;
+}
+
+.services-welcome h1{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.services-welcome p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Services Main Section */
+
+.services {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.services h1 {
+    font-size: 1rem;
+    margin-top: 0;
+    color: #155b15;
+    margin-bottom: 0;
+}
+
+.services h2 {
+    font-size: 2.3rem;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.services p{
+    margin-bottom: 40px;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background: #18462b;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(44,204,113,0.15);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;;
+}
+
+.service-block {
+    width: 350px;
+    height: 460px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: #fff; 
+    padding: 28px 24px 24px 24px;
+    transition: 
+        transform 0.2s, 
+        box-shadow 0.2s, 
+        border 0.2s;
+    position: relative;
+    overflow: hidden; 
+    text-align: left; 
+    border: 2px solid transparent;
+}
+
+.service-block:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 16px 40px rgba(44,204,113,0.18);
+    border: 2px solid #18462b;
+    z-index: 2;
+}
+
+.service-block:hover .icon-circle {
+    transform: translateY(-10px);
+    transition: transform 0.2s;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background: #18462b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+}
+
+.icon-circle img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.desc {
+    font-size: 0.98rem;
+    font-weight: 300;
+    color: #b0b0b0;
+    margin-bottom: 12px;
+    margin-top: 0;
+    line-height: 1.6;
+}
+
+.container a {
+    background-color: rgb(216, 216, 135);
+    text-decoration: none;
+    width: 160px;
+    color: #000;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.2s, color 0.2s;
+    text-align: center;
+}
+
+.service-block a:hover{
+    background-color: #18462b;
+    color: #fff;
+}
+
+/* Change a tag color when parent block is hovered */
+.service-block:hover .service-block a{
+    background-color: #18462b;
+    color: #fff;
+}
+
+/* Book now */
+
+.services-info {
+    background: rgb(31, 65, 31);
+    padding: 0;
+    margin: 40px auto;
+    color: #fff;
+    display: flex;
+    align-items: stretch;
+    min-height: 400px;
+}
+
+.services-book {
+     flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 48px 48px 64px; /* left, right, top, bottom padding */
+    box-sizing: border-box;
+}
+
+.services-info img {
+    flex: 1 1 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    max-height: 100%;
+}
+
+.services-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-block{
+    background-color: rgb(218, 218, 88);
+    width: 600px;
+    height: 500px;
+    color: #000;
+    padding: 10px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0 20px 20px 20px;
+    position: relative;
+    right: 150px;
+}
+
+.info-block h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px
+}
+
+.info-block h2 {
+    font-size: 3rem;
+}
+
+.info-block p {
+    margin: 20px 0;
+}
+
+.info-block a {
+    background-color: #18462b;
+    color: #fff;
+    text-decoration: none;
+    width: 160px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 14px 28px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.services-book ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.services-book li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.services-book li i {
+    color: #18462b;
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    gap: 32px; /* space between the lists */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Process Section */
+
+.process {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.process h1 {
+    font-size: 1.2rem;
+    color: rgb(21, 59, 21);
+    margin-bottom: 0;
+}
+
+.process h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+/* --- Process Section Steps --- */
+.process-steps {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    margin: 48px 0 32px 0;
+    position: relative;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 160px;
+}
+
+.step .icon-circle {
+    width: 120px;
+    height: 120px;
+    background: rgb(21, 59, 21);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(44,204,113,0.13);
+    z-index: 1;
+}
+
+.step .icon-circle img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.step .title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #18462b;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.step .desc {
+    font-size: 1rem;
+    color: #888;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.step .mini-circle {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+    width: 38px;
+    height: 38px;
+    background: #e6d36a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #18462b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 6px rgba(44,204,113,0.10);
+    transition: transform 0.25s cubic-bezier(.4,2,.6,1);
+    z-index: 2;
+    border: 2px solid #fff;
+}
+
+/* Jump effect on hover of the main circle */
+.step:hover .mini-circle,
+.step .icon-circle:hover + .mini-circle {
+    transform: translateX(-50%) translateY(-10px) scale(1.08);
+}
+
+/* Dotted line between steps */
+.process-steps .step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 60px; /* vertically center with the icon-circle */
+    right: -134px;
+    width: 300px;
+    height: 0;
+    border-top: 3px dotted rgb(21, 59, 21);
+    z-index: 0;
+    
+}
+
+@media (max-width: 900px) {
+    .process-steps {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+    .process-steps .step:not(:last-child)::after {
+        width: 0;
+        height: 48px;
+        top: 80px;
+        left: 50%;
+        right: auto;
+        border-top: none;
+        border-left: 3px dotted #27ae60;
+        transform: translateX(-50%);
+    }
+}
+
