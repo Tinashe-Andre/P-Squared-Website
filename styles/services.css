@@ -11,43 +11,29 @@ body{
   background-color: #f7f7f7;  
 }
 
-.book-now {
-    background: #27ae60 !important;
-    color: #fff !important;
-    padding: 10px 22px !important;
-    border-radius: 25px !important;
-    font-weight: bold !important;
-    box-shadow: 0 2px 8px rgba(46,204,113,0.1) !important;
-    transition: background 0.2s !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    width: auto !important; 
-}
-.book-now:hover {
-    background: #18462b !important;
-}
-
 .services-welcome {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: linear-gradient(rgba(44,204,113,0.25), rgba(44,204,113,0.25)),
-        url('../images/services-img.jpg') bottom/cover no-repeat;
+    background: /*linear-gradient(rgba(44,204,113,0.25), rgba(44,204,113,0.25)),*/
+        url('../images/services-img2.jpg') center/cover no-repeat;
     text-align: left;
     position: relative;
     padding: 48px 0 50px 60px;
 }
 
 .services-welcome h1{
-    font-size: 4rem;
-    color: #fff;
+    font-size: 5rem;
+    color: orange;
+    font-weight: 900;
 }
 
 .services-welcome p{
     font-size: 1.2rem;
-    color: #fff;
+    color: #000;
+    font-weight: 300;
 }
 
 /* Services Main Section */

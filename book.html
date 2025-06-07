@@ -10,14 +10,16 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="index.html"><img src="images/logo.png" width="120" height="120" alt="Company Logo"/></a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="pricelist.html">Price List</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="book.html" class="book-now">BOOK NOW</a>
-    </nav>
+            <a href="index.html"><img src="images/logo-2.jpg" width="120" height="120" alt="Company Logo"/></a>
+            <div class="nav-links-group">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pricelist.html">Price List</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="book.html" class="book-now">BOOK NOW</a>
+            </div>
+        </nav>
     <main>
         <section class="book">
             <h1>Book a Cleaning</h1>
@@ -63,28 +65,9 @@
 			</div>
             <div class="dev"><p><small>Designed & Developed by: <a href="https://tdre-portfolio.vercel.app/" target="_blank">T.Dre</a> :)</small></p></div>
         </footer>
-
-               <button id="scrollTopBtn" title="Back to top">
+        <button id="scrollTopBtn" title="Back to top" style="display:none;">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
-        <script>
-            window.addEventListener('scroll', function() {
-            const btn = document.getElementById('scrollTopBtn');
-            const nav = document.querySelector('.nav');
-            if (!btn || !nav) return;
-            // Show button when nav is scrolled out of view
-            const navBottom = nav.getBoundingClientRect().bottom;
-            if (navBottom < 0) {
-            btn.style.display = 'flex';
-            } else {
-            btn.style.display = 'none';
-            }
-        });
-    </script>
-    <script>
-    document.getElementById('scrollTopBtn').onclick = function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-</script>
-</body>
+        <script src="JavaScript/scrollTop.js"></script>
+    </body>
 </html>

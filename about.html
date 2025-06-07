@@ -11,18 +11,20 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="index.html"><img src="images/logo.png" width="120" height="120" alt="Company Logo"/></a>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="pricelist.html">Price List</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="book.html" class="book-now">BOOK NOW</a>
-    </nav>
+            <a href="index.html"><img src="images/logo-2.jpg" width="120" height="120" alt="Company Logo"/></a>
+            <div class="nav-links-group">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="pricelist.html">Price List</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="book.html" class="book-now">BOOK NOW</a>
+            </div>
+        </nav>
     <main>
     <section class="about-welcome">
         <h1>About Us</h1><br>
-        <p>Reprehenderit in voluptate velit esse cillum<br> dolor aeu fugiat nulla pariatur reiciendis occaecat.</p>
+        <p>Learn a little more about us and our mission<br> to help give you total care.</p>
     </section>
 
         <section class="about-main">
@@ -33,7 +35,7 @@
             Founded in 2024, P Squared Cleaning Services is dedicated to providing top-quality cleaning for homes and businesses. Our mission is to deliver a spotless environment with a personal touch, using eco-friendly products and a reliable team you can trust.
         </p>
         <p>
-          At Cleaners For You we understand the difficulty of maintaining a clean home, especially when you have other things that require your time and energy. We will ensure that we treat your home how we would treat our own. We strive to ensure quality service that will leave every room of your home spotless and most importantly, to your satisfaction.
+          At P² we understand the difficulty of maintaining a clean home, especially when you have other things that require your time and energy. We will ensure that we treat your home how we would treat our own. We strive to ensure quality service that will leave every room of your home spotless and most importantly, to your satisfaction.
         </p>
     </div>
     <div class="owners">
@@ -103,14 +105,14 @@
                 <p>Our Mission: Creating Clean, Fresh Spaces for You.</p>
             </div>
         </div>
-        <img src="images/why-us-img.jpg">
+        <img src="images/what-we-do-img.jpg">
     </section>
     <section class="testimonials">
     <h1>Testimonials</h1>
     <h2>What Our Clients Say</h2>
     <div class="testimonials-carousel">
         <button class="testimonial-arrow left"><i class="fa-solid fa-circle-arrow-left"></i></button>
-        <div class="testimonial-card">
+        <div class="testimonial-card" id="testimonial1">
             <div class="testimonial-stars">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -123,6 +125,20 @@
             </p>
             <span class="testimonial-author">– Tinashe Andre</span>
         </div>
+
+        <div class="testimonial-card" id="testimonial2" style="display:none;">
+            <div class="testimonial-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="testimonial-text">
+                "Excellent service and attention to detail. My office has never looked better. Will use again!"
+            </p>
+            <span class="testimonial-author">– Mutsa C.</span>
+        </div>
         <button class="testimonial-arrow right"><i class="fa-solid fa-circle-arrow-right"></i></button>
     </div>
 </section>
@@ -131,51 +147,62 @@
         <footer>
             <div class="foot">
 				<div class="col-1">
-                    <h3>FOLLOW US</h3>
-					<a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-					<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-					<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <h3>Reach Us At</h3>
+                    <div class="contact-row">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>+27 79 123 4567</span>
+                    </div>
+					<div class="contact-row">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@psquaredcleaning.com">info@psquaredcleaning.com</a>
+                    </div>
+					<div class="contact-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Northwold, Randburg</span>
+                    </div>
                     <p><small>P Squared &copy; Copyright 2025</small></p>
 				</div>
 					
 				<div class="col-2">
-					<h3>BOOK NOW</h3>
-					<form>
-						<input type="email" placeholder="Your Email Address" required>
-						<br>
-						<button type="submit">SUBMIT</button>
-					</form>
+					<h3>Useful Links</h3>
+					<div class="links">
+                        <a><span>> </span> Home</a>
+                        <a><span>> </span>About Us</a>
+                        <a><span>> </span>Services</a>
+                        <a><span>> </span>Price List</a>
+                        <a><span>> </span>Contact Us</a>
+                    </div>
+				</div>
+
+                <div class="col-3">
+					<h3>Our Services</h3>
+					<div class="links">
+                        <a><span>> </span> Home Deep</a>
+                        <a><span>> </span> Office</a>
+                        <a><span>> </span> Kitchen Hygiene</a>
+                        <a><span>> </span> Commercial</a>
+                        <a><span>> </span> Carpet Cleaning</a>
+                    </div>
 				</div>
 					
-				<div class="col-3">
-					<h3>LOCATION</h3>
-					<p><a ref="https://www.google.com/maps?q=Appletree+Lane+Third+Road,+Northwold,+Randburg&output=embed">Office Park<br>Northwold, Randburg, 2194</a></p>
-				</div>
+				<div class="col-4">
+                    <h3>Our Newsletter</h3>
+                    <form class="newsletter-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
 			</div>
             <div class="dev"><p><small>Designed & Developed by: <a href="https://tdre-portfolio.vercel.app/" target="_blank">T.Dre</a> :)</small></p></div>
         </footer>
-
-               <button id="scrollTopBtn" title="Back to top">
+        <button id="scrollTopBtn" title="Back to top" style="display:none;">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
-        <script>
-            window.addEventListener('scroll', function() {
-            const btn = document.getElementById('scrollTopBtn');
-            const nav = document.querySelector('.nav');
-            if (!btn || !nav) return;
-            // Show button when nav is scrolled out of view
-            const navBottom = nav.getBoundingClientRect().bottom;
-            if (navBottom < 0) {
-            btn.style.display = 'flex';
-            } else {
-            btn.style.display = 'none';
-            }
-        });
-    </script>
-    <script>
-    document.getElementById('scrollTopBtn').onclick = function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-</script>
-</body>
+        <script src="JavaScript/scrollTop.js"></script>
+    </body>
 </html>

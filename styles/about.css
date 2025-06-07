@@ -1,23 +1,35 @@
+/*---Colors---*/
+:root {
+    --color-1: #39614a; /* Green */
+    --color-2: #2ecc71; /* Lighter Green */
+    --color-3: #e4df7d; /* Yellow */
+    --color-4: #f8f9fa; /*Off white */
+    --color-5: #ece9a9; /* Light Background */
+    --color-6: rgb(0, 89, 255); /* blue */
+}
+
 .about-welcome {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background: linear-gradient(rgba(44,204,113,0.25), rgba(44,204,113,0.25)),
-        url('../images/about-img.jpg') bottom/cover no-repeat;
+    background: /*linear-gradient(rgba(44,204,113,0.25), rgba(44,204,113,0.25)),*/
+        url('../images/about-img2.jpg') center/cover no-repeat;
     text-align: left;
     position: relative;
     padding: 48px 0 50px 60px;
 }
 
 .about-welcome h1{
-    font-size: 4rem;
-    color: #fff;
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--color-6);
 }
 
 .about-welcome p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -84,45 +96,51 @@
 }
 
 .owners {
-    flex: 1 1 180px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    margin-top: 12px;
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically within the section */
+    gap: 48px;
+    margin: 40px auto 30px auto;  /* Center the owners block itself */
+    width: 100%;
+    max-width: 1000px;            /* Optional: limit max width for better centering */
 }
 
 .owner-card {
     background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(44,204,113,0.08);
-    padding: 16px 12px;
-    text-align: center;
-    width: 170px;
+    color: #18462b;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44,204,113,0.10);
+    padding: 32px 36px 24px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;                /* Increased width */
+    min-height: 340px;           /* Increased height */
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0 auto;
 }
 
 .owner-card img {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 10px;
-    border: 3px solid #27ae60;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(44,204,113,0.13);
 }
 
 .owner-card h3 {
-    margin: 0 0 4px 0;
-    font-size: 1.1rem;
-    color: #27ae60;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 10px 0 4px 0;
+    color: #18462b;
 }
 
 .owner-card p {
+    font-size: 1.05rem;
+    color: #27ae60;
     margin: 0;
-    font-size: 1rem;
-    color: #555;
-    background: none;
-    padding: 0;
-    box-shadow: none;
+    font-weight: 500;
 }
 
 /* Why us Section */
@@ -240,20 +258,23 @@
     display: flex;
     align-items: stretch;
     min-height: 400px;
+    width: 100vw; /* Ensure full viewport width if needed */
+    max-width: 100%;
 }
 
 .what-we-do-content {
-     flex: 1 1 50%;
+    flex: 1 1 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 48px 48px 48px 64px; /* left, right, top, bottom padding */
+    padding: 48px 48px 48px 64px;
     box-sizing: border-box;
 }
 
 .what-we-do img {
     flex: 1 1 50%;
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
     display: block;
