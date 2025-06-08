@@ -23,18 +23,25 @@
 </head>
 <body>
   <nav class="nav">
-    <a href="index.html">
-      <img src="images/logo-2.jpg" width="120" height="120" alt="Company Logo" />
-    </a>
-    <div class="nav-links-group">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="pricelist.html">Price List</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="book.html" class="book-now">BOOK NOW</a>
-    </div>
-  </nav>
+            <div class="nav-left">
+                <img src="images/logo-2.jpg" alt="Logo" class="nav-logo">
+                    <span class="nav-company">P² Total Care</span>
+            </div>
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+            <div class="nav-links-group" id="nav-links-group">
+                <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
+                <a href="index.html" data-aos="fade-right" data-aos-delay="100">Home</a>
+                <a href="about.html" data-aos="fade-right" data-aos-delay="200">About Us</a>
+                <a href="services.html" data-aos="fade-right" data-aos-delay="300">Services</a>
+                <a href="pricelist.html" data-aos="fade-right" data-aos-delay="400">Price List</a>
+                <a href="contact.html" data-aos="fade-right" data-aos-delay="500">Contact Us</a>
+                <a href="book.html" class="book-now" data-aos="fade-left" data-aos-delay="600">BOOK NOW</a>
+            </div>
+        </nav>
 
   <main>
     <section class="about-welcome" data-aos="fade-up">
@@ -258,6 +265,7 @@
   </button>
 
   <script src="JavaScript/scrollTop.js"></script>
+  <script src="JavaScript/hamburger.js"></script>
 
   <script>
     // Testimonial carousel script
