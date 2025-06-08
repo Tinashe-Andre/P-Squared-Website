@@ -7,6 +7,16 @@
     margin: 0;
 }
 
+/*---Colors---*/
+:root {
+    --color-1: #39614a; /* Green */
+    --color-2: #2ecc71; /* Lighter Green */
+    --color-3: #ebe46c; /* Yellow */
+    --color-4: #f8f9fa; /*Off white */
+    --color-5: #ece9a9; /* Light Background */
+    --color-6: rgb(0, 89, 255); /* blue */
+}
+
 body{
   background-color: #f7f7f7;  
 }
@@ -148,7 +158,7 @@ body{
 }
 
 .container a {
-    background-color: rgb(216, 216, 135);
+    background-color: var(--color-3);
     text-decoration: none;
     width: 160px;
     color: #000;
@@ -193,13 +203,14 @@ body{
     box-sizing: border-box;
 }
 
-.services-info img {
-    flex: 1 1 50%;
-    width: 100%;
-    height: 100%;
+.services-info > img {
+    width: 70vw;
+    max-width: 80vw;
+    min-width: 320px;
+    height: auto;
+    margin-right: 32px;
     object-fit: cover;
     display: block;
-    max-height: 100%;
 }
 
 .services-book {
@@ -210,7 +221,7 @@ body{
 }
 
 .info-block{
-    background-color: rgb(218, 218, 88);
+    background-color: var(--color-3);
     width: 600px;
     height: 500px;
     color: #000;
@@ -249,6 +260,11 @@ body{
     display: inline-block;
     margin-top: 10px;
     transition: background 0.2s;
+}
+
+.info-block a:hover {
+    background-color: #2ecc71;
+    color: #000;
 }
 
 .services-book ul {

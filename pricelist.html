@@ -4,107 +4,161 @@
     <meta charset="UTF-8">
     <title>Price List - P Squared Cleaning Services</title>
     <link rel="stylesheet" href="styles/index.css">
-     <link rel="stylesheet" href="styles/prices.css">
+    <link rel="stylesheet" href="styles/prices.css">
     <link rel="icon" href="images/logo_no_bg.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
 </head>
 <body>
-    <nav class="nav">
-            <a href="index.html"><img src="images/logo-2.jpg" width="120" height="120" alt="Company Logo"/></a>
-            <div class="nav-links-group">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <a href="pricelist.html">Price List</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="book.html" class="book-now">BOOK NOW</a>
-            </div>
-        </nav>
+    <nav class="nav" data-aos="fade-down" data-aos-duration="800">
+        <a href="index.html"><img src="images/logo-2.jpg" width="120" height="120" alt="Company Logo"/></a>
+        <div class="nav-links-group">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricelist.html">Price List</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="book.html" class="book-now">BOOK NOW</a>
+        </div>
+    </nav>
     <main>
-        <section class="price-list">
+        <section class="price-list" data-aos="fade-up" data-aos-duration="900">
             <h1>Plans and Pricing</h1>
             <h2>Affordable Cleaning Plans for Every Need</h2>
-            <p>Our trained staff has experience with daily onsite cleaning from small office buildings to office <br>blocks and corporate complexes. We go out of our way to find “what is important to each one of our<br> clients” with respect to cleaning services and tailor our services accordingly. Our janitorial<br> cleaning methods cover every area and surface of your business environment.<br>
-            Corporate cleaning done properly makes a vital contribution towards providing a clean, comfortable and safe working <br>environment. Our business cleaning services are discreet and comprehensive whether before, during or after <br>working hours, or over weekends and are completed with minimum disruption or distraction to your staff. A <br>spotlessly clean office makes the right impression to visitors, clients and employees.</p>
-          <div class="price-block">
-            <div class="price-card">
-                <div class="icon-circle">
-                <img src="images/pricing-icon1.png" alt="Basic Plan Icon">
+            <div class="price-block">
+                <div class="price-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-circle">
+                        <img src="images/pricing-icon1.png" alt="Basic Plan Icon">
+                    </div>
+                    <p class="title">Basic</p>
+                    <p class="price">R275.99 <span class="per">/month</span></p>
+                    <p class="desc">Once off cleaning</p>
+                    <ul class="features">
+                        <li><i class="fa-regular fa-circle-check"></i> Dusting &amp; wipe-down</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Vacuuming &amp; mopping</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Full sanitization</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Every trash removal</li>
+                    </ul>
+                    <a href="contact.html" class="price-btn">Choose Plan 🠖</a>
+                </div>
+                <div class="price-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-circle">
+                        <img src="images/pricing-icon2.png" alt="Standard Plan Icon">
+                    </div>
+                    <p class="title">Standard</p>
+                    <p class="price">R449.99 <span class="per">/month</span></p>
+                    <p class="desc">Daily cleaning</p>
+                    <ul class="features">
+                        <li><i class="fa-regular fa-circle-check"></i> Full sanitization &amp; wipe-down</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Scrubbing of sinks &amp; mopping</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Exterior full cleaning</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Window polishing</li>
+                    </ul>
+                    <a href="contact.html" class="price-btn">Choose Plan 🠖</a>
+                </div>
+                <div class="price-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-circle">
+                        <img src="images/pricing-icon3.png" alt="Premium Plan Icon">
+                    </div>
+                    <p class="title">Premium</p>
+                    <p class="price">R999.99 <span class="per">/month</span></p>
+                    <p class="desc">Intensive Care</p>
+                    <ul class="features">
+                        <li><i class="fa-regular fa-circle-check"></i> Exterior full cleaning &amp; wipe-down</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Fridge & oven cleaning &amp; mopping</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Carpet deep cleaning</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Extra focus on areas</li>
+                    </ul>
+                    <a href="contact.html" class="price-btn">Choose Plan 🠖</a>
+                </div>
             </div>
-                <p class="title">Basic</p>
-                <p class="price">R275.99 <span class="per">/month</span></p>
-                <p class="desc">Once off cleaning</p>
-                <ul class="features">
-                    <li><i class="fa-regular fa-circle-check"></i> Dusting &amp; wipe-down</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Vacuuming &amp; mopping</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Full sanitization</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Every trash removal</li>
-                </ul>
-                <a href="contact.html" class="price-btn">Choose Plan 🠖</a>
+            <div class="price-intro-hero" data-aos="fade-up" data-aos-delay="400">
+                <div class="price-intro-bg"></div>
+                <div class="price-intro-content">
+                    <div class="price-intro-icons">
+                        <i class="fa-solid fa-building"></i>
+                        <i class="fa-solid fa-broom"></i>
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Tailored Cleaning for Every Space</h3>
+                    <blockquote>
+                        <span class="quote-mark">“</span>
+                        <span>
+                            We go out of our way to find what’s important to each client and tailor our services accordingly. From small offices to corporate complexes, our expert team ensures every surface is spotless, every time.
+                        </span>
+                        <span class="quote-mark">”</span>
+                    </blockquote>
+                    <ul class="price-intro-list">
+                        <li><i class="fa-regular fa-circle-check"></i> Discreet, comprehensive cleaning—before, during, or after hours</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Minimum disruption, maximum results</li>
+                        <li><i class="fa-regular fa-circle-check"></i> A spotless office makes the right impression</li>
+                    </ul>
+                </div>
             </div>
-            <div class="price-card">
-                <div class="icon-circle">
-                <img src="images/pricing-icon2.png" alt="Basic Plan Icon">
-            </div>
-                <p class="title">Standard</p>
-                <p class="price">R449.99 <span class="per">/month</span></p>
-                <p class="desc">Daily cleaning</p>
-                <ul class="features">
-                    <li><i class="fa-regular fa-circle-check"></i> Full sanitization &amp; wipe-down</li>
-                    <li><i class="fa-regular fa-circle-check"></i> 
-Scrubbing of sinks &amp; mopping</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Exterior full cleaning</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Window polishing</li>
-                </ul>
-                <a href="contact.html" class="price-btn">Choose Plan 🠖</a>
-            </div>
-            <div class="price-card">
-                <div class="icon-circle">
-                <img src="images/pricing-icon3.png" alt="Basic Plan Icon">
-            </div>
-                <p class="title">Premium</p>
-                <p class="price">R999.99 <span class="per">/month</span></p>
-                <p class="desc">Intensive Care</p>
-                <ul class="features">
-                    <li><i class="fa-regular fa-circle-check"></i> Exterior full cleaning &amp; wipe-down</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Fridge & oven cleaning &amp; mopping</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Carpet deep cleaning</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Extra focus on areas</li>
-                </ul>
-                <a href="contact.html" class="price-btn">Choose Plan 🠖</a>
-            </div>
-          </div>      
         </section>
     </main>
-      <footer>
-            <div class="foot">
-				<div class="col-1">
-                    <h3>FOLLOW US</h3>
-					<a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-					<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-					<a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <p><small>P Squared &copy; Copyright 2025</small></p>
-				</div>
-					
-				<div class="col-2">
-					<h3>BOOK NOW</h3>
-					<form>
-						<input type="email" placeholder="Your Email Address" required>
-						<br>
-						<button type="submit">SUBMIT</button>
-					</form>
-				</div>
-					
-				<div class="col-3">
-					<h3>LOCATION</h3>
-					<p><a ref="https://www.google.com/maps?q=Appletree+Lane+Third+Road,+Northwold,+Randburg&output=embed">Office Park<br>Northwold, Randburg, 2194</a></p>
-				</div>
-			</div>
-            <div class="dev"><p><small>Designed & Developed by: <a href="https://tdre-portfolio.vercel.app/" target="_blank">T.Dre</a> :)</small></p></div>
-        </footer>
-        <button id="scrollTopBtn" title="Back to top" style="display:none;">
-            <i class="fa-solid fa-arrow-up"></i>
-        </button>
-        <script src="JavaScript/scrollTop.js"></script>
-    </body>
+    <footer data-aos="fade-up" data-aos-duration="900">
+        <div class="foot">
+            <div class="col-1" data-aos="fade-right" data-aos-delay="100">
+                <h3>Reach Us At</h3>
+                <div class="contact-row">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>+27 79 123 4567</span>
+                </div>
+                <div class="contact-row">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:info@psquaredcleaning.com">info@psquaredcleaning.com</a>
+                </div>
+                <div class="contact-row">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Northwold, Randburg</span>
+                </div>
+                <p><small>P Squared &copy; Copyright 2025</small></p>
+            </div>
+            <div class="col-2" data-aos="fade-up" data-aos-delay="200">
+                <h3>Useful Links</h3>
+                <div class="links">
+                    <a href="index.html"><span>> </span> Home</a>
+                    <a href="about.html"><span>> </span>About Us</a>
+                    <a href="services.html"><span>> </span>Services</a>
+                    <a href="pricelist.html"><span>> </span>Price List</a>
+                    <a href="contact.html"><span>> </span>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-3" data-aos="fade-up" data-aos-delay="300">
+                <h3>Our Services</h3>
+                <div class="links">
+                    <a href="services.html"><span>> </span> Home Deep</a>
+                    <a href="services.html"><span>> </span> Office</a>
+                    <a href="services.html"><span>> </span> Kitchen Hygiene</a>
+                    <a href="services.html"><span>> </span> Commercial</a>
+                    <a href="services.html"><span>> </span> Carpet Cleaning</a>
+                </div>
+            </div>
+            <div class="col-4" data-aos="fade-left" data-aos-delay="400">
+                <h3>Our Newsletter</h3>
+                <form class="newsletter-group">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="dev"><p><small>Designed & Developed by: <a href="https://tdre-portfolio.vercel.app/" target="_blank">T.Dre</a> :)</small></p></div>
+    </footer>
+    <button id="scrollTopBtn" title="Back to top" style="display:none;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Add AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="JavaScript/scrollTop.js"></script>
+</body>
 </html>
