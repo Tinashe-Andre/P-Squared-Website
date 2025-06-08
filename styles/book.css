@@ -131,3 +131,99 @@
 .book-form button:hover {
     background: #18462b;
 }
+
+/* --- Responsive Styles for Book Page --- */
+@media (max-width: 1100px) {
+    .book-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 18px 10px;
+    }
+    .foot {
+        flex-direction: column;
+        gap: 24px;
+        align-items: stretch;
+        padding: 0 2vw;
+    }
+    .col-1, .col-2, .col-3, .col-4 {
+        min-width: 0;
+        width: 100%;
+        padding: 24px 10px;
+        border-radius: 14px;
+        align-items: flex-start;
+    }
+    .col-4 {
+        align-items: center;
+    }
+    .newsletter-group {
+        width: 100%;
+        max-width: 100%;
+    }
+    .socials {
+        justify-content: flex-start;
+    }
+    .dev {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    html, body {
+        font-size: 15px;
+    }
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 4vw;
+    }
+    .nav img {
+        height: 44px;
+        width: 44px;
+    }
+    .nav-links-group {
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+        align-items: center;
+    }
+    .nav a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+    .book h1 {
+        font-size: 1.3rem;
+    }
+    .book-form {
+        max-width: 98vw;
+        padding: 12px 4px;
+    }
+    .foot {
+        padding: 0 1vw;
+        gap: 14px;
+    }
+    .col-1, .col-2, .col-3, .col-4 {
+        padding: 14px 4px;
+        font-size: 0.98rem;
+    }
+    .col-1 h3, .col-2 h3, .col-3 h3, .col-4 h3 {
+        font-size: 1.1rem;
+    }
+    .newsletter-group input[type="email"] {
+        font-size: 0.98rem;
+        padding: 0 44px 0 10px;
+        height: 36px;
+    }
+    .newsletter-group button[type="submit"] {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+        right: 3px;
+    }
+    .socials i {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+}
