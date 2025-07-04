@@ -7,11 +7,11 @@
 
 html, body {
   overflow-x: hidden;
-   overflow-y: auto;
   font-family: Arial, sans-serif;
   width: 100%;
   background: #f8f9fa;
   color: #222;
+  position: relative;
 }
 
 
@@ -117,7 +117,7 @@ html, body {
 }
 
 .nav a:hover {
-  color: var(--color-3);
+  color: orange
 }
 
 .nav a.book-now {
@@ -241,7 +241,7 @@ html, body {
    Welcome Section
    =========================== */
 .welcome {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   align-items: stretch; /* allow content to align right */

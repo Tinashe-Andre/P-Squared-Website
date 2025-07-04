@@ -16,9 +16,4 @@ navClose.addEventListener('click', () => {
 document.body.style.overflow = 'auto';
 document.documentElement.style.overflow = 'auto';
 
-// When menu opens:
-document.body.style.overflow = 'hidden';
-
-// When menu closes:
-document.body.style.overflow = 'auto';
 

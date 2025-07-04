@@ -107,7 +107,7 @@
             </div>
         </section>
     </main>
-    <footer data-aos="fade-up" data-aos-duration="900">
+    <footer data-aos="fade-right" data-aos-duration="900">
         <div class="foot">
             <div class="col-1" data-aos="fade-right" data-aos-delay="100">
                 <h3>Reach Us At</h3>
@@ -125,7 +125,7 @@
                 </div>
                 <p><small>P Squared &copy; Copyright 2025</small></p>
             </div>
-            <div class="col-2" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-2" data-aos="fade-right" data-aos-delay="200">
                 <h3>Useful Links</h3>
                 <div class="links">
                     <a href="index.html"><span>> </span> Home</a>
@@ -135,7 +135,7 @@
                     <a href="contact.html"><span>> </span>Contact Us</a>
                 </div>
             </div>
-            <div class="col-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-3" data-aos="fade-right" data-aos-delay="300">
                 <h3>Our Services</h3>
                 <div class="links">
                     <a href="services.html"><span>> </span> Home Deep</a>
@@ -145,7 +145,7 @@
                     <a href="services.html"><span>> </span> Carpet Cleaning</a>
                 </div>
             </div>
-            <div class="col-4" data-aos="fade-left" data-aos-delay="400">
+            <div class="col-4" data-aos="fade-right" data-aos-delay="400">
                 <h3>Our Newsletter</h3>
                 <form class="newsletter-group">
                     <input type="email" placeholder="Your Email Address" required>
@@ -158,7 +158,8 @@
                 </div>
             </div>
         </div>
-        <div class="dev"><p><small>Designed & Developed by: <a href="https://tdre-portfolio.vercel.app/" target="_blank">T.Dre</a> :)</small></p></div>
+        <div class="dev">
+            <p><small>Designed & Developed by: <a href="https://tdre-portfolio.vercel.app/" target="_blank">T.Dre</a> :)</small></p></div>
     </footer>
     <button id="scrollTopBtn" title="Back to top" style="display:none;">
         <i class="fa-solid fa-arrow-up"></i>
@@ -166,8 +167,15 @@
     <!-- Add AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-      AOS.init();
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                duration: 800,
+                easing: "ease-in-out",
+                once: true,
+            });
+        });
     </script>
+
     <script src="JavaScript/scrollTop.js"></script>
     <script src="JavaScript/hamburger.js"></script>
 </body>

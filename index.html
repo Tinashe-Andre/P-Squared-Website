@@ -118,7 +118,7 @@
                 </div>
             </section>
         </main>
-        <footer data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">
+        <footer data-aos="fade-right" data-aos-duration="900">
             <div class="foot">
                 <div class="col-1" data-aos="fade-right" data-aos-delay="100">
                     <h3>Reach Us At</h3>
@@ -190,10 +190,12 @@
         <script src="JavaScript/scrollTop.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
         <script>
+            document.addEventListener("DOMContentLoaded", function () {
             AOS.init({
                 duration: 800, // animation duration in ms
                 easing: "ease-in-out", // easing function
                 once: true, // whether animation happens only once
+            });
             });
         </script>
         <script src="JavaScript/hamburger.js"></script>

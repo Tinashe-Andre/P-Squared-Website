@@ -152,7 +152,7 @@ html, body {
 }
 
 .nav a:hover {
-  color: var(--color-3);
+  color: orange;
 }
 
 .nav a.book-now {
